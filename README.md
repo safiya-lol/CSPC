@@ -11,4 +11,16 @@ conda activate cspc
 
 ## PW1 - Lab A: Reproducible Foundations
 
-(Will fill in after Part 6.)
+**What I built:**
+- A CSPC repo with a conda environment, a decay simulation (pure-Python loop and NumPy versions), three pytest tests, and a speed comparison.
+
+**Speed comparison (loop vs NumPy):**
+- loop  : 3.7648 s
+- numpy : 0.0004 s
+- speed-up: 10258x faster
+
+**Tests:** all passing? yes — 3 passed under `pytest -v`
+(`test_starts_at_N0`, `test_rejects_negative_rate`, `test_matches_law`).
+
+**Conclusion:**
+- I learned how to install git and conda. Now I feel more comfortable working with terminal. This PW demonstrated the importance of vectorisation - it showcased a difference between a loop and Numpy version of simulation, that is 10000x times faster.
