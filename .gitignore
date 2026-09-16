@@ -1,2 +1,6 @@
 __pycache__/
 *.pyc
+figure.png
+*.png
+.snakemake/
+__pycache__/
