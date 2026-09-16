@@ -24,3 +24,14 @@ conda activate cspc
 
 **Conclusion:**
 - I learned how to install git and conda. Now I feel more comfortable working with terminal. This PW demonstrated the importance of vectorisation - it showcased a difference between a loop and Numpy version of simulation, that is 10000x times faster.
+
+## Pw1 — Lab B
+
+The observed decay counts (left panel of `figure.png`) fall off exponentially
+with time. The analytical curve `N0 * exp(-LAMBDA * t)` (right panel) tracks
+the observed points closely, so the data follows the expected exponential
+decay law.
+
+The Snakemake pipeline (`Snakefile`) automates figure generation: it runs
+`plot_STUDENT.py` to build `figure.png` from `decay_observed.csv`, and only
+reruns when the input data or the script changes.
