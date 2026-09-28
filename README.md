@@ -35,3 +35,17 @@ decay law.
 The Snakemake pipeline (`Snakefile`) automates figure generation: it runs
 `plot_STUDENT.py` to build `figure.png` from `decay_observed.csv`, and only
 reruns when the input data or the script changes.
+
+## PW2 - Lab A: Motion from Tracking Data
+
+**Mean acceleration:** -8.57 m/s² (theoretical -9.81)
+**Std of acceleration:** 28.7
+**Max position error after integrating back:** 0.78 m 
+
+**Why the acceleration is noisy:**
+Acceleration is the second derivative of position, the noises stack, that's why it is very noise.
+
+**What integrating back showed:**
+
+
+I integrated the noisy acceleration to get velocity, then integrated that to get position. The recovered position matched the original within 0.78  m, which shows integration suppresses the noise that differentiation amplified.
