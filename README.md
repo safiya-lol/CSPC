@@ -47,5 +47,11 @@ Acceleration is the second derivative of position, the noises stack, that's why 
 
 **What integrating back showed:**
 
+### Part 2B: harder function g(x) = x⁴ − 3x² + x + 5
+
+- **Do the methods agree?** On the easy function all three gave x ≈ 3. On g(x) they did not always agree.
+- **Did Newton land on a minimum?** Not always. From x0 = 0 it landed on x ≈ 0.17, which is a maximum because g'' < 0. Newton only finds where the slope is zero, so g'' must be checked.
+- **Effect of the starting point:** Gradient descent goes to the nearest valley. From x0 = 0 that was the deepest one (−1.30). From x0 = 2 it was a shallower one (1.13).
+- **Lesson:** On a simple function the methods agree. On a bumpy function, the starting point and the method change the answer.
 
 I integrated the noisy acceleration to get velocity, then integrated that to get position. The recovered position matched the original within 0.78  m, which shows integration suppresses the noise that differentiation amplified.
